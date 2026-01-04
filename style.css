@@ -1,14 +1,42 @@
-* {
+/* * {
 	margin: 0;
 	padding: 0;
-}
+	box-sizing: border-box;
+} */
 .bold {
 	font-style: bold;
 }
 .uppercase {
 	text-transform: uppercase;
 }
+img {
+	width: 200px;
+	height: 200px;
+}
 
-/* .picture-The-Queen-s-Cookie:hover {
-	
-} */
+/* products */
+.products > * {
+	border: 5px solid grey;
+	position: relative;
+
+}
+.products article img {
+	width: 200px;
+	height: 200px;
+}
+.products .top-img {
+	position: absolute;
+	opacity: 0;
+}
+.products .top-img:hover {
+	opacity: 1;
+}
+
+/* endStrip */
+
+.endStrip {
+	width: 100%;
+	height: 400px;
+	background-color: gray;
+	margin-top: 150px;
+}
