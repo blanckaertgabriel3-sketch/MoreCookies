@@ -1,3 +1,14 @@
+:root {
+	/* logo1 and logo2*/
+	--orange: #F6AA0F;
+	--beige: #EBC37D;
+	--lightBrown: #D79B67;
+	--brown: #5C3918;
+	--darckBrown: #2E1707;
+	--darckBrown2: #1E0F00;
+
+
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -13,11 +24,65 @@ img {
 	width: 200px;
 	height: 200px;
 }
-/* header */
-
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+/* ----------------------------------header */
+.strip {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* Nav */
+.big-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container {
+	display: flex;
+	justify-content: center;
+}
+.nav1 {
+	width: 80%;
+	height: 400px;
+	display: flex;
+	flex-direction: row;
+}
+.nav2 {
+	width: 80%;
+	display: flex;
+	gap: 15px;
+	justify-content: space-between;
+}
+.nav1 > * {
+	flex: 1;
+}
+.leftPart {
+	display: flex;
+	gap: 15px;
+	justify-content: flex-start;
+	margin-top: 35px;
+}
+.middlePart {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.rightPart {
+	display: flex;
+	gap: 15px;
+	justify-content: flex-end;
+	margin-top: 35px;
+}
 /* products */
 .products > * {
-	border: 5px solid grey;
 	position: relative;
 	
 }
@@ -32,7 +97,9 @@ img {
 .products .top-img:hover {
 	opacity: 1;
 }
+/* ----------------------------------main */
 
+/* ----------------------------------footer */
 /* endStrip */
 
 .endStrip {
@@ -42,21 +109,23 @@ img {
 	margin-top: 150px;
 }
 
+/* ----------------------------------responsive */
 /* mobil */
 @media screen and (max-width: 779px) {
-	* {
-		background-color: rgb(192, 212, 255);
+	.strip {
+		background-color: var(--lightBrown);
 	}
 }
 /* tablette */
 @media screen and (min-width: 780px) and (max-width: 979px) {
-	* {
-		background-color: rgb(244, 244, 142);
+	.strip {
+		background-color: var(--brown);
 	}
 }
 /* desktop */
 @media screen and (min-width: 980px) {
-	* {
-		background-color: rgb(251, 200, 200);
+	.strip {
+		background-color: var(--darckBrown);
+		color: #fff;
 	}
 }
