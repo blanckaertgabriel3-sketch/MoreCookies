@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.bold {
+	font-style: bold;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+
+/* .picture-The-Queen-s-Cookie:hover {
+	
+} */
