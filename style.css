@@ -1,8 +1,8 @@
-/* * {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-} */
+}
 .bold {
 	font-style: bold;
 }
@@ -13,12 +13,13 @@ img {
 	width: 200px;
 	height: 200px;
 }
+/* header */
 
 /* products */
 .products > * {
 	border: 5px solid grey;
 	position: relative;
-
+	
 }
 .products article img {
 	width: 200px;
@@ -39,4 +40,23 @@ img {
 	height: 400px;
 	background-color: gray;
 	margin-top: 150px;
+}
+
+/* mobil */
+@media screen and (max-width: 779px) {
+	* {
+		background-color: rgb(192, 212, 255);
+	}
+}
+/* tablette */
+@media screen and (min-width: 780px) and (max-width: 979px) {
+	* {
+		background-color: rgb(244, 244, 142);
+	}
+}
+/* desktop */
+@media screen and (min-width: 980px) {
+	* {
+		background-color: rgb(251, 200, 200);
+	}
 }
